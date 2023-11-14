@@ -18,7 +18,7 @@ body {
     font-family: 'Poppins', sans-serif;
 }
  
-#cabecalho{
+#cabecalho {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,39 +27,41 @@ body {
     height: 65px;
 }
  
-.container{
+.container {
     max-width: 1140px;
     margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
  
-#menu ul{
+#menu ul {
     display: flex;
     list-style: none;
 }
  
-#menu ul li{
+#menu ul li {
     margin-left: 20px;
     margin-right: 20px;
 }
  
-#menu a{
+#menu a {
     color: #2f2f2f;
     font-weight: 500;
 }
-
+ 
 #botao-menu-mobile {
     display: none;
-    /* Tirar elementos na tela*/
+    /*desaparecer elemento na tela */
 }
  
-.btn-secundario{
+.btn-secundario {
     background-color: var(--secundario);
     padding: 5px 15px 5px 15px;
     border-radius: 5px;
     color: #ffffff;
 }
  
-#banner{
+#banner {
     background-image: url("../img/banner.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -70,11 +72,11 @@ body {
     align-items: center;
 }
  
-#banner p{
+#banner p {
     margin: 10px;
 }
  
-#formPesquisa{
+#formPesquisa {
     background-color: #ffffff;
     color: var(--texto);
     font-size: 1.5em;
@@ -86,18 +88,18 @@ body {
     align-items: center;
 }
  
-#formPesquisa form input{
+#formPesquisa form input {
     height: 40px;
     font-size: 1rem;
     border: none;
 }
  
-#formPesquisa form i{
+#formPesquisa form i {
     padding: 10px;
     font-size: 1.2rem;
 }
  
-#formPesquisa button{
+#formPesquisa button {
     background-color: var(--primaria);
     border-radius: 10px;
     border: none;
@@ -107,12 +109,12 @@ body {
  
 }
  
-#formPesquisa{
+#formPesquisa {
     padding: 5px 15px 5px 15px;
  
 }
  
-.lista-servicos-banner ul li{
+.lista-servicos-banner ul li {
     display: inline-block;
     margin: 10px;
     font-size: 0.8em;
@@ -121,7 +123,7 @@ body {
     border-radius: 50px;
 }
  
-.secao-titulo{
+.secao-titulo {
     border-left: 5px solid var(--primaria);
     margin-top: 30px;
     margin-bottom: 30px;
@@ -129,12 +131,12 @@ body {
  
 }
  
-.titulo{
+.titulo {
     display: flex;
     justify-content: space-between;
 }
  
-.titulo a{
+.titulo a {
     color: var(--texto);
     text-transform: uppercase;
     font-size: 14px;
@@ -143,22 +145,22 @@ body {
  
 /* lista de categorias*/
  
-.lista-card-categorias{
+.lista-card-categorias {
     display: flex;
     gap: 40px;
 }
  
-.lista-card-categorias img{
+.lista-card-categorias img {
     width: 100%;
     height: auto;
     border-radius: 15px;
 }
  
-.lista-card-categorias div{
-    position: relative;  
+.lista-card-categorias div {
+    position: relative;
 }
  
-.lista-card-categorias span{
+.lista-card-categorias .item span {
     display: block;
     position: absolute;
     left: 10px;
@@ -170,58 +172,230 @@ body {
     border-radius: 15px;
 }
  
-.lista-card-servicos{
+.lista-card-servicos {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
     justify-content: space-between;
 }
  
-.lista-card-servicos img{
+.lista-card-servicos img {
     width: 100%;
     height: auto;
     border-radius: 15px;
+    filter: brightness(70%);
+    -webkit-filter: brightness(70%);
 }
-
+ 
 .card-servicos {
-    width: calc(33% - 30px);
+    flex-grow: 1;
+    width: calc((100% / 3 ) - 30px);
+   
 }
-
-
-
-
-
-
-
-
-
-
-/* Estilo Mobile */
-
-@media (max-width:767px){
-
+ 
+.card-foto {
+    position: relative;
+}
+ 
+.card-foto-legenda {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+ 
+}
+ 
+.card-foto-preco {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+}
+ 
+.card-foto-categoria {
+    background-color: var(--label-categoria);
+    border-radius: 15px;
+    padding: 15px;
+    padding-right: 15px;
+    text-align: center;
+    line-height: 10px;
+}
+ 
+.card-descricao-legenda {
+    display: flex;
+    justify-content: space-between;
+}
+ 
+#rodape {
+    margin-top: 50px;
+    border-top: 2px solid #ccc;
+    padding-top: 30px;
+}
+ 
+#linha-rodape {
+    display: flex;
+    flex-wrap: wrap;
+}
+ 
+.coluna-rodape {
+    width: 25%;
+}
+ 
+.coluna-rodape a {
+    color: var(--texto);
+    margin-top: 5px;
+    display: block;
+}
+ 
+.coluna-rodape a:hover {
+    color: var(--primaria);
+    font-weight: 500;
+ 
+}
+ 
+.coluna-rodape ul {
+    list-style: none;
+}
+ 
+.coluna-rodape i {
+    color: var(--primaria);
+}
+ 
+.rede-social {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+ 
+.rede-social a {
+    background-color: #ededed;
+    font-size: 24px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 10px;
+    border-radius: 10px;
+}
+ 
+.copyright {
+    background-color: #ccc;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 30px;
+}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+/*estilo mobile */
+ 
+@media (max-width: 767px) {
+ 
+    #cabecalho {
+        position: fixed;
+        background-color: #ffffff;
+        width: 100%;
+        z-index: 999999;
+    }
+ 
+ 
+    #logotipo img {
+        height: 30px;
+    }
+ 
+    #banner {
+        padding-top: 60px;
+        min-width: 330px
+    }
+ 
+ 
+ 
     #botao-menu-mobile {
-        display: block; /* Mostrar elementos na tela */
+        /*mostrar elemento na tela */
+        display: block;
         padding: 10px;
         cursor: pointer;
         font-size: 18px;
     }
-
+ 
     #menu {
-        position: absolute;
+        position: fixed;
         background-color: #ffffff;
         width: 250px;
         height: 100vh;
         top: 65px;
+        left: -255px;
         z-index: 99999;
-        box-shadow: 2px 5px 10px #2f2f2f;
+        box-shadow: 2px 5px 5px #2f2f2f;
+        transition: left 0.5s;
     }
-
+ 
+    #menu.menu-ativo{
+        left: 0;
+    }
+ 
     #menu ul {
-            display: block;
+        display: block;
     }
-
+ 
     #menu li {
         padding: 10px;
     }
+ 
+    #formPesquisa {
+        margin-left: 15px;
+        margin-right: 15px;
+        border-radius: 10px;
+    }
+ 
+    #formPesquisa form {
+        flex-direction: column;
+    }
+ 
+    #formPesquisa input {
+        flex-grow: 1;
+ 
+    }
+ 
+    .form-icon {
+        display: flex;
+        width: 100%;
+    }
+ 
+    .lista-servicos-banner {
+        display: none;
+    }
+ 
+    #banner h2 {
+        font-size: 20px;
+ 
+    }
+ 
+    #banner p {
+        font-size: 14px;
+ 
+    }
+ 
+ 
+    .card-servicos {
+        flex-grow: 1;
+        width: calc((100% / 2 ) - 30px);
+   
+    }
+ 
+    .coluna-rodape {
+        width: 50%;
+    }
+   
+ 
 }
