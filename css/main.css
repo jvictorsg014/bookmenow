@@ -6,7 +6,7 @@
     --label-categoria:
 }
 
-* { 
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -14,9 +14,9 @@
 }
 
 body {
-       background-image: url("..//img/textura-fundo.png");
-       font-family: 'Poppins', sans-serif;
-       color: #ffffff;
+    background-image: url("..//img/textura-fundo.png");
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
 }
 
 #cabecalho {
@@ -242,12 +242,6 @@ body {
     justify-content: space-between;
 }
 
-#rodape {
-    margin-top: 50px;
-    border-top: 2px solid #ccc;
-    padding-top: 30px;
-}
-
 #linha-rodape {
     display: flex;
     flex-wrap: wrap;
@@ -280,12 +274,13 @@ body {
 .rede-social {
     display: flex;
     justify-content: space-evenly;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .rede-social a {
-    background-color: #ededed;
+    background: rgba(0, 0, 0, 0.2);
+    color: #ffffff;
     font-size: 24px;
     width: 50px;
     line-height: 50px;
@@ -302,12 +297,12 @@ body {
     margin-top: 30px;
 }
 
-.backbgcinza{
+.backbgcinza {
     margin-top: 50px;
     margin-bottom: 50px;
     padding-top: 15px;
     padding-bottom: 15px;
-    background:rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.2);
 }
 
 #botaoplano a {
